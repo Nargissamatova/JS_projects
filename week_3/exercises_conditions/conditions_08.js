@@ -6,6 +6,14 @@ Returns a string combining the number and the appropriately pluralized form of t
 
  */
 
+function pluralize(noun, number) {
+  if (number > 1) {
+    return `${number} ${noun}s`;
+  } else {
+    return `${number} ${noun}`;
+  }
+}
+
 // Sample usage - do not modify
 console.log("I have " + pluralize("cat", 0));
 console.log("I have " + pluralize("dog", 1));
