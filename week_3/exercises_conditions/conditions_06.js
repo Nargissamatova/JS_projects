@@ -10,6 +10,16 @@ function greaterNum(x, y) {
   return Math.max(x, y);
 }
 
+// OR
+
+function greaterNum(x, y) {
+  if (x > y) {
+    return x;
+  } else {
+    return y;
+  }
+}
+
 // Sample usage - do not modify
 console.log(greaterNum(5, 10));
 console.log(greaterNum(2, 1));
