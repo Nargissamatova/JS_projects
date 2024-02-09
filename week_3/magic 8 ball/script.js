@@ -33,7 +33,7 @@ button.onclick = () => {
       answer = "Even my dog is saying yes";
       break;
     case 7:
-      answer = "It’s N to the O!";
+      answer = "Hahaha no";
       break;
     case 8:
       answer = "I love you, so yeah";
@@ -46,7 +46,7 @@ button.onclick = () => {
   textArea.textContent = storedAnswer;
   inputValue.value = "";
 
-  // Set a timeout to clear the answer after a couple of seconds (e.g., 2000 milliseconds)
+  // Set timeout to clear the answer after a couple of seconds (e.g., 2000 milliseconds)
   setTimeout(() => {
     textArea.textContent = "";
   }, 3000);
