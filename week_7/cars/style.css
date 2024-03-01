@@ -1,0 +1,68 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 40%;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 2em auto;
+}
+
+form {
+    width: 30%;
+}
+
+label {
+    display: block;
+}
+
+input {
+    margin-bottom: 1em;
+    width: 80%;
+    height: 2em;
+}
+
+.form_button {
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    padding: 1em;
+    border: none;
+    width: 8em;
+}
+
+#searchButton {
+    margin-left: 2px;
+    padding: 6px;
+    width: 6em;
+    background-color: rgb(255, 119, 0);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.table_container {
+    height: 30em;
+    overflow-y: scroll;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #8ba2ff;
+}

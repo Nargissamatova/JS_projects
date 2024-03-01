@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <label for="">License number</label>
+        <input type="text" name="licenseNumber" id="license" />
+
+        <label for="">Car maker</label>
+        <input type="text" name="carMaker" id="maker" />
+
+        <label for="">Car model</label>
+        <input type="text" name="carModel" id="model" />
+
+        <label for="">Car owner</label>
+        <input type="text" name="carOwner" id="owner" />
+
+        <label for="">Car price</label>
+        <input type="text" name="carPrice" id="price" />
+
+        <label for="">Car color</label>
+        <input type="text" name="carColor" id="color" />
+        <br />
+        <button type="button" id="addCar" class="form_button">Add car</button>
+        <button type="reset" id="reset" class="form_button">Reset</button>
+      </form>
+      <div class="table_container">
+        <label for="">Search car</label>
+        <input type="search" />
+        <button id="searchButton">search</button>
+        <table>
+          <thead>
+            <tr>
+              <th>License number</th>
+              <th>Car maker</th>
+              <th>Car model</th>
+              <th>Car owner</th>
+              <th>Car price</th>
+              <th>Car color</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Add rows in js-->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
