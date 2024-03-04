@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*wont show top background when scrolling up */
+    overscroll-behavior: none;
+}
+
+
+html {
+    font-size: 14px;
+    /*smoothly scrolling with anchor menu*/
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: lightseagreen;
+    font-family: Impact, sans-serif;
+    color: white;
+}
+
+header,
+section,
+footer {
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul li {
+    /*even removes list style type */
+    display: inline-block;
+
+}
+
+nav a {
+    text-decoration: none;
+    /*inherits color from parent*/
+    color: inherit;
+}
+
+section {
+    min-height: 75vh;
+}
+
+section:first-child,
+header {
+    background-color: lightcoral;
+}
+
+section:nth-child(2) {
+    background-color: cornflowerblue;
+}
+
+footer {
+    background-color: mediumseagreen;
+}
+
+button {
+    padding: 2rem;
+    border-radius: 5rem;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+#backToTop {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+}
