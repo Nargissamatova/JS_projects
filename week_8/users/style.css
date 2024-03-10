@@ -1,0 +1,22 @@
+body {
+    background-color: darkslategray;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#container div {
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+    padding: 2em;
+    margin: 5px;
+}
