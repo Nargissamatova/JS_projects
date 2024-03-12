@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pancake Maker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img src="pancake.jpeg" alt="Delicious pancakes" />
+        <div class="price-banner"><span id="totalPrice">$5</span></div>
+      </div>
+      <div class="form-container">
+        <div class="center-container">
+          <h2>Customize Your Pancake</h2>
+          <div class="customization-section">
+            <label for="type">Choose your pancake type:</label>
+            <select id="type">
+              <option value="5">Classic - $5</option>
+              <option value="6">Chocolate - $6</option>
+              <option value="7">Blueberry - $7</option>
+            </select>
+          </div>
+          <div class="customization-section">
+            <p>Select your toppings ($1 each):</p>
+            <input type="checkbox" id="nuts" value="1" />
+            <label for="nuts">Nuts</label><br />
+            <input type="checkbox" id="bananas" value="1" />
+            <label for="bananas">Bananas</label><br />
+            <input type="checkbox" id="syrup" value="1" />
+            <label for="syrup">Syrup</label><br />
+          </div>
+          <div class="customization-section">
+            <p>Add extras:</p>
+            <input type="checkbox" id="whippedCream" value="2" />
+            <label for="whippedCream"> Whipped Cream - $2</label><br />
+            <input type="checkbox" id="iceCream" value="3" /><label
+              for="iceCream"
+              >Ice Cream - $3</label
+            ><br />
+          </div>
+          <div class="price-display">
+            <h3>Total Price: <span id="totalPrice">$5</span></h3>
+          </div>
+        </div>
+      </div>
+      <div class="order_container">
+        <div class="center-container">
+          <h2>Your order:</h2>
+          <label for="orderName">Enter your name:</label>
+          <br />
+          <input type="text" id="orderName" />
+          <p>Pancake type: ...</p>
+          <ol>
+            <li>Toppings: [...]</li>
+            <li>Extras: [...]</li>
+          </ol>
+          <p>For: <span id="nameText"></span></p>
+          <button id="orderButton">
+            <span>SEND <img src="/pancake/pancakes.png" alt="" /> </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
