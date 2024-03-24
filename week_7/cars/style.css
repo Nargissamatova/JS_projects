@@ -2,19 +2,20 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    background-color: steelblue;
+}
+
 .container {
-    width: 40%;
-    border: 1px solid black;
-    padding: 20px;
     display: flex;
     justify-content: space-around;
     width: 70%;
-    margin: 2em auto;
+    margin: 5em auto;
+    padding: 4em;
+    background-color: rgb(201, 226, 241);
+    border-radius: 1em;
 }
 
-form {
-    width: 30%;
-}
 
 label {
     display: block;
@@ -22,27 +23,36 @@ label {
 
 input {
     margin-bottom: 1em;
-    width: 80%;
+    width: 95%;
     height: 2em;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+
+#searchForm input {
+    width: 50%;
+    height: 3em;
 }
 
 .form_button {
-    background-color: darkblue;
+    background-color: rgb(46, 46, 210);
     color: white;
     font-weight: bold;
     padding: 1em;
     border: none;
     width: 8em;
+    border-radius: 4px;
 }
 
 #searchButton {
     margin-left: 2px;
-    padding: 6px;
-    width: 6em;
+    padding: 1em;
     background-color: rgb(255, 119, 0);
     color: white;
     font-weight: bold;
     border: none;
+    border-radius: 4px;
+
 }
 
 .table_container {
@@ -64,5 +74,5 @@ td {
 }
 
 th {
-    background-color: #8ba2ff;
+    background-color: #6dcd8f;
 }

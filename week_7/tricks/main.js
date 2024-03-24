@@ -49,6 +49,7 @@ backToTopButton.addEventListener("click", () => {
 
   header.classList.remove("bg");
 });
+
 // Apear/ disappear when scrolling 200px
 mobButton.addEventListener("click", toggleMenu);
 menuItems.forEach((item) => item.addEventListener("click", toggleMenu));

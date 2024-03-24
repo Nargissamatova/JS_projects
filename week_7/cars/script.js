@@ -1,5 +1,6 @@
 //Access html car inputs
 const addButton = document.getElementById("addCar");
+const addCarForm = document.querySelector("#addCar");
 
 // Access table body
 const tbody = document.querySelector("tbody");
@@ -16,10 +17,9 @@ class Car {
   }
 }
 
+// Initialize storage array
 const storage = [];
-for (item of storage) {
-  console.log(item);
-}
+
 function addCar() {
   // Access car input values from html
   const license = document.getElementById("license").value;
@@ -61,4 +61,37 @@ function addCar() {
 
   tbody.appendChild(tr);
 }
+
 addButton.addEventListener("click", addCar);
+
+const searchCarForm = document.getElementById("searchForm");
+
+const searchCar = (e) => {
+  e.preventDefault();
+  const licenseQuery = document
+    .querySelector("#search")
+    .value.trim()
+    .toLowerCase();
+
+  const display = document.querySelector("#searchResult");
+
+  if (!licenseQuery) {
+    display.textContent = "Please enter a license plate to search";
+    return;
+  }
+
+  try {
+    const result = storage.find(({ licensePlate }) =>
+      licensePlate.toLowerCase().includes(licenseQuery)
+    );
+
+    display.textContent = result
+      ? `Found ${result.maker}, ${result.model}, owned by ${result.currentOwner} `
+      : "No car with that license plate";
+  } catch (error) {
+    console.error("Error occurred:", error);
+    display.textContent = "Something went wrong, try again";
+  }
+};
+
+searchCarForm.addEventListener("submit", searchCar);
